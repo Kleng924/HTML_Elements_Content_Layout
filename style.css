@@ -1,0 +1,1087 @@
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+  }
+  
+  img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6600;
+    color: white;
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #ff6600;
+    outline: none;
+  }
+
+  /* Basic styling for the navigation bar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Remove default list styling */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+  }
+  
+  /* Style the links */
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  /* Space between the links */
+  .navbar li {
+    margin: 0 10px;
+  }
+
+  /* Hover effect: Change color and add underline */
+.navbar a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  /* Additional hover effect: Background color change */
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Optional: Active link styling */
+  .navbar a:active {
+    color: #ff6600;
+    background-color: #222;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Adding scale and shadow effect on hover */
+.navbar a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  /* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .navbar ul {
+      display: block;
+    }
+    
+    .navbar li {
+      margin: 5px 0;
+    }
+    
+    .navbar a {
+      padding: 10px 15px;
+    }
+  }
+
+  .navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar a:active {
+    color: #ff6600;
+    background-color: #222;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar ul {
+      display: block;
+    }
+  
+    .navbar li {
+      margin: 5px 0;
+    }
+  
+    .navbar a {
+      padding: 10px 15px;
+    }
+  }
+
+  /* Basic styling for the image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for each image */
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect: Enlarge image and add shadow */
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional: Add a border on hover */
+  .image-gallery img:hover {
+    border: 3px solid #ff6600;
+  }
+
+  /* Adding a grayscale effect with a color overlay on hover */
+.image-gallery img:hover {
+    filter: grayscale(50%);
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff6600;
+  }
+  
+  /* Overlay effect with pseudo-elements */
+  .image-gallery img:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 102, 0, 0.5);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Responsive styling */
+@media (max-width: 600px) {
+    .image-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .image-gallery img {
+      border-radius: 4px;
+    }
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff6600;
+  }
+  
+  @media (max-width: 600px) {
+    .image-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .image-gallery img {
+      border-radius: 4px;
+    }
+  }
+
+  /* Basic styling for CTA buttons */
+.cta-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect: Change background color and add shadow */
+.cta-btn:hover {
+    background-color: #e65c00;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Optional: Active state styling */
+  .cta-btn:active {
+    background-color: #cc5200;
+    transform: scale(0.98);
+  }
+
+  /* Adding gradient background and text shadow */
+.cta-btn {
+    background: linear-gradient(45deg, #ff6600, #ff8533);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .cta-btn:hover {
+    background: linear-gradient(45deg, #e65c00, #ff8533);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  /* Responsive button styling */
+@media (max-width: 600px) {
+    .cta-btn {
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      font-size: 16px;
+    }
+  }
+
+  .cta-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cta-btn {
+    background: linear-gradient(45deg, #ff6600, #ff8533);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: linear-gradient(45deg, #e65c00, #ff8533);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .cta-btn:active {
+    background-color: #cc5200;
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 600px) {
+    .cta-btn {
+      width: 100%;
+      margin: 10px 0;
+      padding: 15px;
+      font-size: 16px;
+    }
+  }
+
+  /* Basic styling for the feedback form */
+.feedback-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .feedback-form input, .feedback-form select, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Focus effect for input fields */
+.feedback-form input:focus, .feedback-form select:focus, .feedback-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(255, 102, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for the submit button */
+  .feedback-form button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Active effect for the submit button */
+  .feedback-form button:active {
+    background-color: #cc5200;
+    transform: scale(0.98);
+  }
+
+  /* Placeholder color change on focus */
+.feedback-form input::placeholder, .feedback-form textarea::placeholder {
+    color: #999;
+  }
+  
+  .feedback-form input:focus::placeholder, .feedback-form textarea:focus::placeholder {
+    color: #ff6600;
+  }
+  
+  /* Smooth transition for placeholder color */
+  .feedback-form input::placeholder, .feedback-form textarea::placeholder {
+    transition: color 0.3s ease;
+  }
+
+  /* Responsive form styling */
+@media (max-width: 600px) {
+    .feedback-form {
+      padding: 15px;
+    }
+  
+    .feedback-form h2 {
+      font-size: 20px;
+    }
+  
+    .feedback-form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  .feedback-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-form h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .feedback-form input, .feedback-form select, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .feedback-form input:focus, .feedback-form select:focus, .feedback-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(255, 102, 0, 0.5);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feedback-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feedback-form button:active {
+    background-color: #cc5200;
+    transform: scale(0.98);
+  }
+  
+  .feedback-form input::placeholder, .feedback-form textarea::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 600px) {
+    .feedback-form {
+      padding: 15px;
+    }
+  
+    .feedback-form h2 {
+      font-size: 20px;
+    }
+  
+    .feedback-form button {
+      font-size:​⬤
+
+/* Basic form styling */
+.styled-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .styled-form input, .styled-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .styled-form input:focus, .styled-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .styled-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .styled-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+
+  /* Basic list styling */
+.styled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .styled-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .styled-list li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+
+  /* Basic table styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .styled-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  .styled-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+/* Basic form container styling */
+.registration-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Label styling */
+  .registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Input field styling */
+  .registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Hover and focus effects for input fields */
+  .registration-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .registration-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for submit button */
+  .registration-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  /* Active effect for submit button */
+  .registration-form button:active {
+    background-color: #004080;
+    transform: scale(0.98);
+  }
+  
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .registration-form {
+      padding: 15px;
+    }
+  
+    .registration-form h2 {
+      font-size: 24px;
+    }
+  
+    .registration-form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  .registration-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .registration-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .registration-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .registration-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .registration-form button:active {
+    background-color: #004080;
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 600px) {
+    .registration-form {
+      padding: 15px;
+    }
+  
+    .registration-form h2 {
+      font-size: 24px;
+    }
+  
+    .registration-form button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the unordered list to create a horizontal layout */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for individual list items */
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  /* Styling for the links */
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Hover effect for links */
+  .nav-menu a:hover {
+    color: #ff6600;
+    transition: color 0.3s ease;
+  }
+  
+  /* Custom bullet points or icons using pseudo-elements */
+  .nav-menu li::before {
+    content: "★"; /* Use an icon or character as a custom bullet point */
+    color: #ff6600;
+    margin-right: 8px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+  }
+  
+  /* Remove the custom bullet point on hover */
+  .nav-menu li:hover::before {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+/* Adding a background color and padding to links on hover */
+.nav-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Adding a border to the bottom of links */
+  .nav-menu a {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Changing the border color on hover */
+  .nav-menu a:hover {
+    border-color: #ff6600;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-menu li {
+      margin: 10px 0;
+    }
+  
+    .nav-menu a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  .navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #ff6600;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-color: #ff6600;
+  }
+  
+  .nav-menu li::before {
+    content: "★"; /* Custom bullet point */
+    color: #ff6600;
+    margin-right: 8px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+  }
+  
+  .nav-menu li:hover::before {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 600px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-menu li {
+      margin: 10px 0;
+    }
+  
+    .nav-menu a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+/* Basic styling for the table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the table header */
+  .styled-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* Padding for table cells */
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+  }
+  
+  /* Alternating row colors */
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  /* Hover effect for rows */
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Optional: Specific column width adjustments */
+  .styled-table th:first-child, .styled-table td:first-child {
+    width: 40%;
+  }
+
+/* Adding a border radius to the table */
+.styled-table {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Highlighting the first column for better emphasis */
+  .styled-table tbody tr td:first-child {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Adding a subtle background to header cells */
+  .styled-table thead th {
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
+  }
+  
+  /* Responsive table adjustments */
+  @media (max-width: 600px) {
+    .styled-table thead {
+      display: none;
+    }
+  
+    .styled-table, .styled-table tbody, .styled-table tr, .styled-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .styled-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .styled-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .styled-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .styled-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .styled-table th:first-child, .styled-table td:first-child {
+    width: 40%;
+  }
+  
+  .styled-table tbody tr td:first-child {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  @media (max-width: 600px) {
+    .styled-table thead {
+      display: none;
+    }
+  
+    .styled-table, .styled-table tbody, .styled-table tr, .styled-table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .styled-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .styled-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .styled-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+
+
+
+
+
